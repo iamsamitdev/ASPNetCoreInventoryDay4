@@ -1,0 +1,13 @@
+﻿@{
+    string CurrentReq = Convert.ToString(Context.Request.HttpContext.Request.RouteValues["Controller"]);
+    // Console.WriteLine(CurrentReq);
+    switch (CurrentReq)
+    {
+        case "Frontend":
+            Layout = "_Frontend";
+            break;
+        default:
+            Layout = "_Backend";
+            break;
+    }
+}  
