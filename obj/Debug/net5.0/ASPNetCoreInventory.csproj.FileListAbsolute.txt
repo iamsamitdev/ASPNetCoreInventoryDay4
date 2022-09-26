@@ -130,7 +130,6 @@ G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNe
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.runtimeconfig.json
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.runtimeconfig.dev.json
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.dll
-G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ref\ASPNetCoreInventory.dll
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.pdb
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.Views.dll
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\ASPNetCoreInventory.Views.pdb
@@ -241,7 +240,6 @@ G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\runti
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.csproj.AssemblyReference.cache
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.GeneratedMSBuildEditorConfig.editorconfig
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.AssemblyInfoInputs.cache
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.AssemblyInfo.cs
@@ -250,7 +248,6 @@ G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNe
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.RazorAssemblyInfo.cache
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.RazorAssemblyInfo.cs
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\staticwebassets\ASPNetCoreInventory.StaticWebAssets.Manifest.cache
-G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\staticwebassets\ASPNetCoreInventory.StaticWebAssets.xml
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\scopedcss\bundle\ASPNetCoreInventory.styles.css
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.TagHelpers.input.cache
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.TagHelpers.output.cache
@@ -286,3 +283,16 @@ G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ref\A
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.pdb
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.genruntimeconfig.cache
 G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Frontend\SignupMember.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Products\Delete.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\ASPNetCoreInventory.csproj.AssemblyReference.cache
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\web.config
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\appsettings.Development.json
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\appsettings.json
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\ASPNetCoreInventory.deps.json
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\ASPNetCoreInventory.runtimeconfig.json
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\bin\Debug\net5.0\Publish\wwwroot\backend\vendor\fontawesome-free\package.json
+G:\TrainingWorkshop\ASPDotnetCoreSony\ASPNetCoreInventory\obj\Debug\net5.0\refint\ASPNetCoreInventory.dll

@@ -21,7 +21,7 @@
                         @Html.Raw(ViewBag.Message)
                     }
 
-                    <form asp-action="Login" method="post" class="user">
+                    <form asp-action="Login" method="post">
 
                         <div class="form-group">
                             <label asp-for="Member_Email" class="control-label"></label>
@@ -45,10 +45,10 @@
                         </div>
                         <input type="submit" value="เข้าสู่ระบบ" class="btn btn-primary btn-block" />
                         <hr>
-                        <a href="/backend" class="btn btn-google btn-user btn-block">
+                        <a href="#" class="btn btn-google btn-user btn-block">
                             <i class="fab fa-google fa-fw"></i> Login with Google
                         </a>
-                        <a href="/backend" class="btn btn-facebook btn-user btn-block">
+                        <a href="#" class="btn btn-facebook btn-user btn-block">
                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                         </a>
                     </form>

@@ -1,12 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ASPNetCoreInventory.Models
 {
     [ModelMetadataType(typeof(MemberMetadata))]
     public partial class tb_Member
     {
+        [NotMapped]
+        public string ConfirmPassword { get; set; }
     }
 
     public class MemberMetadata
@@ -30,6 +33,12 @@ namespace ASPNetCoreInventory.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "ป้อนรหัสผ่านก่อน")]
         [MinLength(6, ErrorMessage = "รหัสผ่านขั้นต่ำ 6 ตัวอักษร")]
         public string Member_Password { get; set; }
+
+        [Display(Name = "ยืนยันรหัสผ่าน")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "ป้อนรหัสผ่านยืนยันก่อน")]
+        [DataType(DataType.Password)]
+        [Compare("Member_Password", ErrorMessage = "รหัสผ่านไม่ตรงกัน")]
+        public string ConfirmPassword { get; set; }
 
         [Display(Name = "วันเกิด")]
         [DataType(DataType.Date)]

@@ -1,6 +1,8 @@
+using ASPNetCoreInventory.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,6 +26,19 @@ namespace ASPNetCoreInventory
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // เพิ่ม service session
+            services.AddSession();
+            services.AddMvc().AddSessionStateTempDataProvider();
+
+            // เพิ่ม service HttpContextAccessor
+            services.AddHttpContextAccessor();
+
+            // เพิ่ม InventoryDBContext
+            services.AddDbContext<InventoryDBContext>(
+                option => option.UseSqlServer(Configuration.GetConnectionString("DBConnectionString"))
+             );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,10 +56,11 @@ namespace ASPNetCoreInventory
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
+
+            // เพิ่มการใช้งาน Session
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

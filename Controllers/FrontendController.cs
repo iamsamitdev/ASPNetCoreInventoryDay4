@@ -1,4 +1,5 @@
 ﻿using ASPNetCoreInventory.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,36 @@ namespace ASPNetCoreInventory.Controllers
         [HttpGet]
         public ActionResult Register()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(tb_Member member)
+        {
+            string message;
+
+            // ตรวจสอบการ Validate ฟอร์ม
+            if (ModelState.IsValid)
+            {
+                // บันทึกข้อมูลลงตาราง
+                using (InventoryDBContext db = new InventoryDBContext())
+                {
+                    db.tb_Members.Add(member);
+                    db.SaveChanges();
+                    ModelState.Clear();
+                    message = "<div class=\"alert alert-success text-center\">ลงทะเบียนเรียบร้อยแล้ว</div>";
+                    // Redirect ไปหน้า Login
+                    return RedirectToAction("Login", "Frontend");
+                }
+
+            }
+            else
+            {
+                // แสดงข้อความแจ้งเตือน
+                message = "<div class=\"alert alert-danger text-center\">ป้อนข้อมูลให้ครบก่อน</div>";
+            }
+
+            ViewBag.Message = message;
             return View();
         }
 
@@ -148,6 +179,15 @@ namespace ASPNetCoreInventory.Controllers
                         {
                             // Login Success
                             message = "<div class=\"alert alert-success text-center\">เข้าสู่ระบบสำเร็จ</div>";
+
+                            // เก็บข้อมูลการ Login ลง Session
+                            HttpContext.Session.SetString("Email", query.Member_Email);
+                            HttpContext.Session.SetString("FirstName", query.Member_Firstname);
+                            HttpContext.Session.SetString("LastName", query.Member_Lastname);
+
+                            // ทำการ Redirect ไปหน้า Dashboard
+                            return RedirectToAction("Dashboard", "Backend");
+
                         }
                         else
                         {
